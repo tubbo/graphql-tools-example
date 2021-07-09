@@ -1,0 +1,7 @@
+query Planets {
+  allPlanets {
+    planets {
+      name
+    }
+  }
+}

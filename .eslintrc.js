@@ -1,0 +1,68 @@
+module.exports = {
+  overrides: [
+    // GraphQL
+    {
+      files: ['**/*.{gql,graphql}'],
+      plugins: ['@graphql-eslint'],
+      parser: '@graphql-eslint/eslint-plugin',
+      rules: {
+        'prettier/prettier': [
+          'error',
+          {
+            parser: 'graphql',
+          },
+        ],
+        '@graphql-eslint/avoid-duplicate-fields': 'error',
+        '@graphql-eslint/avoid-operation-name-prefix': 'error',
+        '@graphql-eslint/avoid-typename-prefix': 'error',
+        '@graphql-eslint/description-style': ['error', { style: 'block' }],
+        '@graphql-eslint/fields-on-correct-type': 'error',
+        '@graphql-eslint/fragments-on-composite-type': 'error',
+        '@graphql-eslint/known-argument-names': 'error',
+        '@graphql-eslint/known-directives': 'error',
+        '@graphql-eslint/known-fragment-names': 'error',
+        '@graphql-eslint/known-type-names': 'error',
+        '@graphql-eslint/lone-anonymous-operation': 'error',
+        '@graphql-eslint/lone-schema-definition': 'error',
+        '@graphql-eslint/naming-convention': [
+          'error',
+          { leadingUnderscore: 'allow' },
+        ],
+        '@graphql-eslint/no-anonymous-operations': 'error',
+        '@graphql-eslint/no-case-insensitive-enum-values-duplicates': 'error',
+        '@graphql-eslint/no-deprecated': 'error',
+        '@graphql-eslint/no-fragment-cycles': 'error',
+        '@graphql-eslint/no-hashtag-description': 'error',
+        '@graphql-eslint/no-operation-name-suffix': 'error',
+        '@graphql-eslint/no-undefined-variables': 'error',
+        '@graphql-eslint/no-unreachable-types': 'error',
+        '@graphql-eslint/one-field-subscriptions': 'error',
+        '@graphql-eslint/overlapping-fields-can-be-merged': 'error',
+        '@graphql-eslint/possible-fragment-spread': 'error',
+        '@graphql-eslint/provided-required-arguments': 'error',
+        '@graphql-eslint/require-deprecation-reason': 'error',
+        '@graphql-eslint/require-description': [
+          'error',
+          { on: ['ObjectTypeDefinition'] },
+        ],
+        '@graphql-eslint/require-id-when-available': 'error',
+        '@graphql-eslint/scalar-leafs': 'error',
+        '@graphql-eslint/unique-argument-names': 'error',
+        '@graphql-eslint/unique-directive-names': 'error',
+        '@graphql-eslint/unique-directive-names-per-location': 'error',
+        '@graphql-eslint/unique-enum-value-names': 'error',
+        '@graphql-eslint/unique-field-definition-names': 'error',
+        '@graphql-eslint/unique-fragment-name': 'error',
+        '@graphql-eslint/unique-input-field-names': 'error',
+        '@graphql-eslint/unique-operation-name': 'error',
+        '@graphql-eslint/unique-operation-types': 'error',
+        '@graphql-eslint/unique-type-names': 'error',
+        '@graphql-eslint/unique-variable-names': 'error',
+        '@graphql-eslint/value-literals-of-correct-type': 'error',
+        '@graphql-eslint/variables-are-input-types': 'error',
+        '@graphql-eslint/variables-in-allowed-position': 'error',
+      },
+    },
+  ]
+}
+

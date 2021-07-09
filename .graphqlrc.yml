@@ -1,0 +1,2 @@
+schema: https://swapi-graphql.netlify.app/.netlify/functions/index
+documents: '*.gql'

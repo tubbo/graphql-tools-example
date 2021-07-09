@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@graphql-eslint/eslint-plugin": "^1.1.2",
+    "eslint": "^7.30.0",
+    "graphql": "^15.5.1",
+    "graphql-tools": "^7.0.5"
+  },
+  "scripts": {
+    "lint": "yarn eslint query.gql",
+    "start": "node index.js"
+  }
+}
